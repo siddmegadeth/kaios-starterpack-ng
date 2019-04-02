@@ -1,0 +1,8 @@
+a.navbar-brand.navigable {
+  position: absolute  !important;
+}
+
+nav.navbar.navbar-expand-sm.bg-dark.navbar-dark.ng-scope
+{
+    height: 10px !important;
+}

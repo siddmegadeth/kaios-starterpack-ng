@@ -1,6 +1,7 @@
-<div class="container-fluid">
-	<div id="navigateLanding">
+<div id="navigateLanding">
+<div ng-include="'components/landing/landing-navbar.html'"></div>
 
+<div class="container-fluid">
 		<div class="row text-center">
 			<div class="col-lg-12 col-md-12 col-sm-12">
 				<h4>Welcome To KaiOS</h4>
@@ -15,15 +16,13 @@
 		</div>
 
 		<div class="row text-center">
-			<div class="col-lg-12 col-md-12 col-sm-12">
 				<div class="card text-white bg-primary mb-3 navigable" style="max-width: 20rem;" ng-repeat="c in cards">
 						<div class="card-header">{{c.title}}</div>
 						<div class="card-body">
 							<h4 class="card-title">{{c.header}}</h4>
 							<p class="card-text">{{c.foote}}</p>
-				</div>
+						</div>
 			</div>
 		</div>
-
-	</div>
+</div>
 </div>

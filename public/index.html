@@ -1,29 +1,33 @@
-
 <!DOCTYPE html>
 <html>
-    <script type="text/javascript" src="plugins/winDevice.js"></script>
-    <script type="text/javascript" src="plugins/naviboard.min.js"></script>
-    <base href="/">
-    <head>
-        <meta charset="utf-8">
-        <title>KaiOS</title>
-        <meta name="description" content="A privileged app stub">
-        <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" type="text/css" href="plugins/bootstrap-3.4.1/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="components/landing/landing.css">
-        <link rel="stylesheet" type="text/css" href="components/global/global.css">
-    </head>
-    <body ng-app="myApp" ng-cloak>
-       <div class="section" ng-view></div>
-    </body>
-    <script type="text/javascript" src="plugins/angular-1.6.4/angular.min.js"></script>
-    <script type="text/javascript" src="plugins/angular-1.6.4/angular-route.min.js"></script>
+<script type="text/javascript" src="plugins/winDevice.js"></script>
+<script type="text/javascript" src="plugins/socket.io.min.js"></script>
+<script type="text/javascript" src="plugins/naviboard.min.js"></script>
 
-    <!-- Components And App Files -->
-    <script type="text/javascript" src="init.js"></script>
-    <script type="text/javascript" src="components/landing/landingCtrl.js"></script>
-    <script type="text/javascript" src="components/login/loginCtrl.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>KaiOS</title>
+  <base href="/">
+  <meta name="description" content="A privileged for KaiOS">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+  <link rel="stylesheet" type="text/css" href="plugins/bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+  <!-- Add BootStrap 4 Themes -->
+  <link rel="stylesheet" type="text/css" href="plugins/bootstrap-4-themes/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="components/landing/landing.css">
+  <link rel="stylesheet" type="text/css" href="components/global/global.css">
+</head>
+
+<body ng-app="myApp" ng-cloak>
+  <div class="section" ng-view></div>
+</body>
+<script type="text/javascript" src="plugins/angular-1.6.4/angular.min.js"></script>
+<script type="text/javascript" src="plugins/angular-1.6.4/angular-route.min.js"></script>
+<!-- Components And App Files -->
+<script type="text/javascript" src="init.js"></script>
+<script type="text/javascript" src="components/landing/landingCtrl.js"></script>
+<script type="text/javascript" src="components/login/loginCtrl.js"></script>
 <!-- services  -->
-    <script type="text/javascript" src="components/services/kaios.services.js"></script>
+<script type="text/javascript" src="services/kaios.services.js"></script>
 
 </html>

@@ -1,3 +1,3 @@
 (function() {
-    require("./server/init");
+    require("./server/app");
 })()

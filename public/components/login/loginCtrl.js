@@ -1,16 +1,12 @@
 app.controller('loginCtrl', ['$scope', function($scope){
-	
 
 	naviBoard.setNavigation('navigateLogin');
+//  naviBoard.refreshNavigation('navigateLogin',true);
 
-	 $scope.test = function() {
-        alert("Test")
-        log(naviBoard.getActiveElement());
-    }
 
     $scope.$on("$destroy", function() {
 
-        log("Navigation Destroyed");
+        log(" LoginCtrl Navigation Destroyed");
         naviBoard.destroyNavigation('navigateLogin');
 
     });

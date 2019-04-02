@@ -4,7 +4,9 @@
   "description": "kaiOS Angularjs Runtime App",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.16.4"
+    "body-parser": "^1.18.3",
+    "express": "^4.15.2",
+    "socket.io": "^2.2.0"
   },
   "devDependencies": {},
   "scripts": {

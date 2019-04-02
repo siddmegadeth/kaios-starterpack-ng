@@ -2,7 +2,7 @@
 
 var inject =
     [
-        "ngRoute",
+        "ngRoute"
         // "kaiOS"
     ];
 
@@ -14,11 +14,11 @@ win.log(true); //Enable console.log or Disable console.log and Enable console.er
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 
     //kaiOSProvider.init();
-    $locationProvider.html5Mode(true);
-
+  //  $locationProvider.html5Mode(true);
+    $locationProvider.hashPrefix('');
 
     $routeProvider
-        .when("/landing", {
+    .when("/landing", {
             templateUrl: 'components/landing/landing.html',
             controller: 'landingCtrl'
         })

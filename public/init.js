@@ -19,15 +19,15 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 
     $routeProvider
     .when("/landing", {
-            templateUrl: 'components/landing/landing.html',
+            templateUrl: 'pages/landing/landing.html',
             controller: 'landingCtrl'
         })
         .when("/login", {
-            templateUrl: 'components/login/login.html',
+            templateUrl: 'pages/login/login.html',
             controller: 'loginCtrl'
         })
         .when("/not-found", {
-            templateUrl: 'components/not-found/not-found.html'
+            templateUrl: 'pages/not-found/not-found.html'
         })
         .otherwise({
             redirectTo: '/login'

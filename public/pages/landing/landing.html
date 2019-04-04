@@ -1,5 +1,5 @@
 <div id="navigateLanding">
-<div ng-include="'components/landing/landing-navbar.html'"></div>
+<div ng-include="'pages/landing/landing-navbar.html'"></div>
 
 <div class="container-fluid">
 		<div class="row text-center">
@@ -16,13 +16,7 @@
 		</div>
 
 		<div class="row text-center">
-				<div class="card text-white bg-primary mb-3 navigable" style="max-width: 20rem;" ng-repeat="c in cards">
-						<div class="card-header">{{c.title}}</div>
-						<div class="card-body">
-							<h4 class="card-title">{{c.header}}</h4>
-							<p class="card-text">{{c.foote}}</p>
-						</div>
-			</div>
+			<kai-cards ng-repeat="c in cards"title={{c.title}} text={{c.text}}></kai-cards>
 		</div>
 </div>
 </div>
